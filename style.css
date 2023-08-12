@@ -17,6 +17,7 @@
     width: 70vw;
     height: 70vh;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -44,7 +45,7 @@ p {
 .content {
     background-color: white;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 
@@ -60,10 +61,20 @@ p {
     border: 1.5px solid black;
     border-radius: 50%;
     background-color: #55a555;
-    margin: 3px 3px;
+    margin: 5px 5px;
 }
 
 .bubble:hover {
     background-color: #40a140;
     cursor: pointer;
+}
+
+.gameOver {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* border: 2p   x solid; */
+    align-items: center;
+    width: 100%;
+    height: 80%;
 }
