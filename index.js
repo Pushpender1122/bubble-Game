@@ -18,7 +18,7 @@ const setTimeing = () => {
         }
         else {
             clearInterval(timeInterval);
-            document.querySelector('.content').innerHTML = '<h1 class="gameOver">Game Over</h1>';
+            document.querySelector('.content').innerHTML = '<h1 class="gameOver">Game Over <br><button onclick="restartGame()">Restart</button></h1>';
         }
     }, 1000);
 }
@@ -42,9 +42,20 @@ document.querySelector('.content').addEventListener('click', (e) => {
     }
     // console.log(Number(e.target.textContent));
 })
+const restartGame = () => {
+    scoreValue = 0;
+    document.querySelector('.scoreValue').textContent = scoreValue;
+    timerValue = 30;
+    createBubble();
+    setTimeing();
+    hitsgenerate();
+}
+const Startingfun = () => {
 
-createBubble();
-setTimeing();
-hitsgenerate();
+    createBubble();
+    setTimeing();
+    hitsgenerate();
+}
+
 
 
